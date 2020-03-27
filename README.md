@@ -59,6 +59,12 @@ $ sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.8 1
 $ sudo apt install python3-pip
 ```
 
+## Install libpq
+This is necessary for installing `psycopg2` outside of Docker. If you're not going to be doing that, you can skip this step.
+```bash
+$ sudo apt-get install libpq-dev
+```
+
 ## Install Powerline
 ```bash
 $ sudo apt install powerline  # preferred over `pip3 install --user powerline-status`
