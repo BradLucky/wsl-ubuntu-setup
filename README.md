@@ -92,6 +92,27 @@ $ curl -LO https://github.com/BurntSushi/ripgrep/releases/download/11.0.2/ripgre
 $ sudo dpkg -i ripgrep_11.0.2_amd64.deb
 ```
 
+## Install Node.js
+You'll likely need Node.js (or at least npm) at some point, but if not, you can skip this and/or come back later.
+
+(Tips from https://docs.microsoft.com/en-us/windows/nodejs/setup-on-wsl2#install-nvm-nodejs-and-npm)
+
+### Install nvm (a version manager for Node.js)
+```bash
+$ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash
+```
+Close your terminal and reopen it and verify it is installed.
+```bash
+$ command -v nvm  # expected output is 'nvm'
+```
+
+### Install the latest release of Node.js, verify versions
+```bash
+$ nvm install --lts
+$ node --version
+$ npm --version
+```
+
 ## Get Docker working correctly
 Follow some of the tips from here (https://nickjanetakis.com/blog/setting-up-docker-for-windows-and-wsl-to-work-flawlessly), specifically checking 'yes' to expose daemon on tcp://localhost:2375 without TLS and installing Docker and Docker Compose within WSL.
 
