@@ -75,6 +75,24 @@ $ sudo apt install powerline  # preferred over `pip3 install --user powerline-st
 $ ln -s ~/development-tools/.bash_profile .bash_profile
 ```
 
+## Set Up vim
+Install Vundle
+```shell
+$ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+```
+Link to .vimrc
+```shell
+$ ln -s ~/development-tools/.vimrc .vimrc
+```
+Install plugins
+```shell
+$ vim .vimrc
+
+# Inside vim
+
+:PluginInstall
+```
+
 ## Install pytest and pylint
 ```bash
 $ pip3 install pytest
