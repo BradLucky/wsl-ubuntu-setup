@@ -131,6 +131,16 @@ $ node --version
 $ npm --version
 ```
 
+## Finding files between Ubuntu and Windows
+To look at distro files within Windows:
+1. Press [WIN] + R (or go to the address bar in Windows Explorer)
+1. Type `\\wsl$`
+
+To open your current distro location in Windows Explorer:
+```shell
+$ explorer.exe .
+```
+
 ## Get Docker working correctly
 Follow some of the tips from here (https://nickjanetakis.com/blog/setting-up-docker-for-windows-and-wsl-to-work-flawlessly), specifically checking 'yes' to expose daemon on tcp://localhost:2375 without TLS and installing Docker and Docker Compose within WSL.
 
