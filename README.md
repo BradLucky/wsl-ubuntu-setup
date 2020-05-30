@@ -150,3 +150,7 @@ https://github.blog/2020-02-12-supercharge-your-command-line-experience-github-c
 ## Connect Git with all things in Windows
 This has not been necessary thus far (thanks to WSL2, in part, and also connecting VS Code to WSL), but it seems it could be useful someday...
 [How to use GIT and other Linux tools in WSL on Windows](https://medium.com/faun/how-to-use-git-and-other-linux-tools-in-wsl-on-windows-4c0bffb68b35)
+
+## Get Selenium/ChromeDriver working in WSL
+* https://github.com/lackovic/notes/tree/master/Windows/Windows%20Subsystem%20for%20Linux#use-chromedriver-on-wsl
+* https://superuser.com/questions/1475553/running-selenium-on-wsl-using-chrome
