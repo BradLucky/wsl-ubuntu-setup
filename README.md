@@ -110,6 +110,19 @@ $ curl -LO https://github.com/BurntSushi/ripgrep/releases/download/11.0.2/ripgre
 $ sudo dpkg -i ripgrep_11.0.2_amd64.deb
 ```
 
+### Modify ripgrep to paginate results (and preserve text highlighting)
+_(This was tested on Mac, but not yet on WSL Ubuntu.)_
+
+Move the original ripgrep to a new file (so that keyword `rg` still works in the end)
+```shell
+$ cd $(which rg | awk -F'/rg' '{print $1}')
+$ mv rg rgo
+```
+Create a new file called `rg` with the updated command
+```shell
+$ echo "#\!/bin/sh\n\n$(pwd)/rgo -p \"\$@\" | less -RFX" > rg
+```
+
 ## Install Node.js
 You'll likely need Node.js (or at least npm) at some point, but if not, you can skip this and/or come back later.
 
